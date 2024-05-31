@@ -20,7 +20,7 @@
                 users
             WHERE
                 email = '$email' AND
-                passwd = '$enc_pass'
+                password = '$enc_pass'
             LIMIT 1
         ";
 
@@ -33,7 +33,7 @@
             $_SESSION['user_name'] = $row['fullname'];
             header("refresh:0;url=../home.php");
         }else{
-            echo "<script>alert('Invalid email or passwd')</script>";
+            echo "<script>alert('Invalid email or password')</script>";
             header("refresh:0;url=../signin.php");
         }   
     }

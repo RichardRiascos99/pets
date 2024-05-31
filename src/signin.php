@@ -19,7 +19,7 @@
 <body>
     <form action="backend/signin.php" method="post">
         <input type="email" name="email" required placeholder="@">
-        <input type="password" name="passwd" required placeholder="***">
+        <input type="password" name="passwd" required placeholder="*****">
         <button>Login</button>
         &nbsp;<a href = "signup.html">Create an account</a>
     </form>
